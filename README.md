@@ -121,15 +121,15 @@ int main(){
     cout << "Enter the array size: ";
     cin >> n;
     int x[n];
-    cout << "Enter the array elements:\n";
-    for(int i=0;i<n;i++){
-        cin >> x[i];
-    }
     int m;
     cout << "Enter the sum i.e. value of m: ";
     cin >> m;
+    cout << "Input array:\n";
+    for(int i=0;i<n;i++){
+        cin >> x[i];
+    }
     int subSet[n];
-    cout << "Output matrix which may result in sum: " << m;
+    cout << "Matrix that may result to sum " << m;
     subsetSum(x, subSet, n, 0, 0, 0, m);
 }
 ```
